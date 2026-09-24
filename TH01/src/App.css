@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app-wrapper {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #1a1a1a;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* Form */
+.add-form {
+  margin-bottom: 25px;
+  background-color: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input[type="number"] {
+  max-width: 100px;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6;
+}
+
+.input-group button {
+  padding: 0 20px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.input-group button:hover {
+  background-color: #059669;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Controls (Stats & Filters) */
+.controls-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.stats strong {
+  color: #111827;
+  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #4b5563;
+  transition: all 0.2s;
+}
+
+.filters button:hover {
+  background-color: #e5e7eb;
+}
+
+.filters button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+/* List */
+.student-list {
+  list-style: none;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-info strong {
+  font-size: 16px;
+  color: #111827;
+}
+
+.class-badge {
+  background-color: #ede9fe;
+  color: #5b21b6;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.sub-info {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.status {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.status.pass {
+  color: #059669;
+}
+
+.status.fail {
+  color: #dc2626;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #ef4444;
+  color: white;
+}
