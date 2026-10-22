@@ -1,0 +1,38 @@
+.nav-active {
+  color: red;
+  font-weight: bold;
+}
+
+.correct-ans {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.wrong-ans {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.locked-ans {
+  background-color: orange !important;
+  color: white;
+}
+
+.milestone {
+  font-weight: bold;
+}
+
+.current-ladder {
+  background-color: #ff9800;
+  color: white;
+}
+
+.timer-danger {
+  color: red;
+}
+
+button {
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px;
+}

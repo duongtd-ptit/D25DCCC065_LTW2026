@@ -1,0 +1,1 @@
+const Component = () => <h2>Đang xây dựng...</h2>; export default Component;
