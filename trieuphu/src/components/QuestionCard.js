@@ -1,5 +1,5 @@
 import { LETTERS } from '../data';
-const AnswerButton = ({ index, option, status, isSelected, isCorrect, onClick }) => {
+const AnswerButton = ({ index, option, isHidden, status, isSelected, isCorrect, onClick }) => {
     let btnClass = '';
     if (status === 'locked' && isSelected) btnClass = 'locked-ans';
     if (status === 'revealed') {
@@ -8,22 +8,22 @@ const AnswerButton = ({ index, option, status, isSelected, isCorrect, onClick })
     }
     return (
         <button
-            onClick={() => onClick(index)} disabled={status !== 'answering'} className={btnClass}
-            style={{ width: '45%', textAlign: 'left' }}
+            onClick={() => onClick(index)} disabled={isHidden || status !== 'answering'} className={btnClass}
+            style={{ width: '45%', textAlign: 'left', visibility: isHidden ? 'hidden' : 'visible' }}
         >
             {LETTERS[index]}. {option}
         </button>
     );
 };
 
-const QuestionCard = ({ question, qNum, status, selectedAnswer, onSelect }) => (
+const QuestionCard = ({ question, qNum, status, selectedAnswer, hiddenOptions, onSelect }) => (
     <div>
         <h3>Câu {qNum}/15</h3><p style={{ fontWeight: 'bold' }}>{question.question}</p>
         <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {question.options.map((opt, idx) => (
                 <AnswerButton
-                    key={idx} index={idx} option={opt} status={status}
-                    isSelected={selectedAnswer === idx} isCorrect={question.answer === idx} onClick={onSelect}
+                    key={idx} index={idx} option={opt} isHidden={hiddenOptions?.includes(idx)}
+                    status={status} isSelected={selectedAnswer === idx} isCorrect={question.answer === idx} onClick={onSelect}
                 />
             ))}
         </div>
