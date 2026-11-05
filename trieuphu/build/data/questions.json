@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "level": 1,
+        "question": "Thẻ HTML nào dùng để tạo một liên kết (hyperlink)?",
+        "options": [
+            "<link>",
+            "<a>",
+            "<href>",
+            "<nav>"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 2,
+        "level": 1,
+        "question": "Selector CSS nào chọn phần tử có id=\"header\"?",
+        "options": [
+            ".header",
+            "header",
+            "#header",
+            "*header"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 3,
+        "level": 1,
+        "question": "Thẻ HTML nào tạo danh sách có đánh số thứ tự?",
+        "options": [
+            "<ol>",
+            "<ul>",
+            "<li>",
+            "<dl>"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 4,
+        "level": 1,
+        "question": "Thuộc tính CSS nào dùng đểđổi màu chữ?",
+        "options": [
+            "font-color",
+            "text-color",
+            "background-color",
+            "color"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 5,
+        "level": 1,
+        "question": "Trong React, dữ liệu truyền từ component cha xuống component con gọi là gì?",
+        "options": [
+            "state",
+            "props",
+            "ref",
+            "key"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 6,
+        "level": 2,
+        "question": "Từ khóa ES6 nào khai báo biến không thể gán lại giá trị?",
+        "options": [
+            "var",
+            "let",
+            "const",
+            "static"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 7,
+        "level": 2,
+        "question": "[1, 2, 3].map(x => x * 2) trả về kết quả nào?",
+        "options": [
+            "[2, 4, 6]",
+            "[1, 2, 3]",
+            "12",
+            "undefined"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 8,
+        "level": 2,
+        "question": "Hook nào dùng để khai báo state trong function component?",
+        "options": [
+            "useEffect",
+            "useParams",
+            "useNavigate",
+            "useState"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 9,
+        "level": 2,
+        "question": "Template literal `${1 + 1}` cho ra chuỗi nào?",
+        "options": [
+            "\"1 + 1\"",
+            "\"2\"",
+            "\"11\"",
+            "\"${2}\""
+        ],
+        "answer": 1
+    },
+    {
+        "id": 10,
+        "level": 2,
+        "question": "useEffect(fn, []) chạy hàm fn khi nào?",
+        "options": [
+            "Sau mỗi lần render",
+            "Chỉ khi component bị gỡ",
+            "Một lần, sau lần render đầu tiên",
+            "Không bao giờ chạy"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 11,
+        "level": 3,
+        "question": "Trong nested route, component nào là chỗ hiển thị route con?",
+        "options": [
+            "<Outlet />",
+            "<Route />",
+            "<Link />",
+            "<Routes />"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 12,
+        "level": 3,
+        "question": "Hook nào đọc giá trị :id trên URL /courses/:id?",
+        "options": [
+            "useLocation",
+            "useNavigate",
+            "useParams",
+            "useState"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 13,
+        "level": 3,
+        "question": "Gọi navigate(-1) có tác dụng gì?",
+        "options": [
+            "Tải lại trang",
+            "Về trang chủ",
+            "Xóa lịch sử duyệt web",
+            "Quay lại trang trước đó"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 14,
+        "level": 3,
+        "question": "Hàm cleanup (return) trong useEffect thường dùng để làm gì?",
+        "options": [
+            "Khởi tạo state ban đầu",
+            "Hủy timer, gỡ sự kiện trước khi component bị gỡ",
+            "Gọi API lần đầu",
+            "Bắt component render lại"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 15,
+        "level": 3,
+        "question": "const { a, ...rest } = { a: 1, b: 2, c: 3 }; rest có giá trị nào?",
+        "options": [
+            "{ a: 1 }",
+            "[2, 3]",
+            "{ b: 2, c: 3 }",
+            "undefined"
+        ],
+        "answer": 2
+    }
+]
