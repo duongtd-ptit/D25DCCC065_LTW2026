@@ -7,7 +7,9 @@ import Home from './pages/Home';
 import Questions from './pages/Questions';
 import QuestionDetail from './pages/QuestionDetail';
 import NotFound from './pages/NotFound';
-
+import Play from './pages/Play';
+import Result from './pages/Result';
+import History from './pages/History';
 export default function App() {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,9 +40,9 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="play" element={<h2>Màn hình thi</h2>} />
-        <Route path="result" element={<h2>Kết quả</h2>} />
-        <Route path="history" element={<h2>Lịch sử</h2>} />
+        <Route path="play" element={<Play questions={questions} />} />
+        <Route path="result" element={<Result />} />
+        <Route path="history" element={<History />} />
 
         <Route path="questions" element={<Questions questions={questions} />} />
         <Route path="questions/:id" element={<QuestionDetail questions={questions} />} />
